@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание Интернет Агенства Решение</title>
+    <meta name="description" content="Тестовое задание Интернет Агентства Решение"><meta name="keywords" content="HTML, CSS, JS">
+<meta name="author" content="Vadim Manushin">   
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/assets/styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="its">
+      <h1> </h1>
+            <form class="its-form js-its-form" action="#" method="post">
+              <div class="its-form__logo"><img src="./assets/images/logo.svg" alt="logo"></div>
+              <h2 class="its-form__header">Изменение пароля</h2>
+              <div class="its-form__input its-form__input_first"> 
+                <div class="its-form__placeholder-icon">
+                  <input type="text" name="login" placeholder="Email / Логин"><span class="its-form__error its-form__error_mandatory_field">Обязательное поле</span>
+                </div>
+              </div>
+              <div class="its-form__input">
+                <div class="its-form__placeholder-icon">
+                  <input type="text" name="control-word" placeholder="Контрольная строка"><span class="its-form__error its-form__error_wrong_word">Неверное контрольное слово</span>
+                </div>
+              </div>
+              <div class="its-form__input">
+                <div class="its-form__placeholder-icon">
+                  <input type="password" name="newpass-1" placeholder="Новый пароль">
+                  <div class="its-form__eye its-form__eye_closed"></div><span class="its-form__error its-form__error_password_length">Пароль должен быть не менее 6 символов</span>
+                </div>
+              </div>
+              <div class="its-form__input its-form__input_last">
+                <div class="its-form__placeholder-icon">
+                  <input type="password" name="newpass-2" placeholder="Подтверждение пароля"><span class="its-form__error its-form__error_not_match">Пароли не совпадают</span>
+                </div>
+              </div>
+              <div class="its-form__label">Обязательные поля</div>
+              <button class="its-form__submit" type="submit"> <span>Изменить пароль</span><img src="./assets/images/arrow.svg" alt="arrow"></button>
+              <div class="its-form__sign"><a class="its-form__sign-up" href="/mock-address/change-me" target="_blank" rel="noopener noreferrer">Зарегистрироваться</a><a class="its-form__sign-in" href="/mock-address/change-me" target="_blank" rel="noopener noreferrer">Войти</a></div>
+            </form>
+    </main>
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>
