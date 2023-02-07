@@ -1,0 +1,162 @@
+.its-form {
+  max-width: 500px;
+  min-width: 350px;
+  padding: 20px;
+  width: 100%;
+  min-height: 724px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 25px 0px #0E4C792E;
+  text-align: center;
+  padding: 0 50px;
+
+  &__logo {
+    margin: 20px auto 40px auto;
+    height: 30px;
+    width: 128px;
+  }
+
+  &__header {
+    font-family: $font-family-header;
+    font-weight: 600;
+    font-size: 1.56rem;
+    line-height: 2.125px;
+    color: $font-form-color-main;
+    text-align: center;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    border-bottom: 1px solid $font-form-color-main;
+    max-width: 400px;
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+  }
+
+  input::placeholder {
+    font-family: $font-family-main;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $font-form-color-hover;
+  }
+
+  &__submit {
+    cursor: pointer;
+    background-color: #FFD970;
+    width: 270px;
+    height: 61px;
+    border: none;
+    border-radius: 5px;
+    color:#0E406A;
+
+    span {
+      margin-right: 13px;
+      font-family: $font-family-main;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.944rem;
+      line-height: 1.17rem;
+    }
+
+    img {
+      width: 31px;
+    }
+  }
+
+  &__label {
+    color: $font-form-color-main;
+    font-family: $font-family-main;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 11px;
+    margin-bottom: 30px;
+  }
+
+  &__label::before {
+    content: "*";
+    color: $font-form-markup-color;
+    margin-right: 6px;
+  }
+
+  &__input {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 41px auto 0 auto;
+    text-align: left;
+  }
+  &__input.its-form__input_first {
+    margin-top: 50px;
+  }
+
+  &__input .its-form__placeholder-icon::before {
+    content: "*";
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    color: $font-form-markup-color;
+  }
+
+  &__input_last {
+    margin-bottom: 30px;
+  }
+
+  &__sign {
+    width: 244px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      font-family: $font-family-main;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.2rem;
+      letter-spacing: 0.01em;
+      text-align: left;
+      text-decoration: none;
+      color: $font-form-color-main;
+    }
+  }
+
+  &__sign a:hover {
+    color: $font-form-color-hover;
+  }
+
+  &__error {
+    font-family: $font-family-main;
+    color: #F13F58;
+    font-size: 0.72rem;
+    display: none;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+  }
+
+  &__error_active {
+    display: inline;
+  }
+
+  &__eye {
+    position: absolute;
+    right: 8px;
+    top: 19px;
+    cursor: pointer;
+    width: 20px;
+    height: 10px;
+  }
+
+  &__eye.its-form__eye_closed {
+    background-image: url('../../assets/images/closed-eye.svg');
+  }
+}

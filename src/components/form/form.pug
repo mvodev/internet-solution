@@ -1,0 +1,29 @@
+mixin form({ hrefSignIn='/mock-address/change-me',action='#',wrongWord=false,hrefSignUp = '/mock-address/change-me'} = {})
+  form(action=action method="post" class="its-form js-its-form")
+    .its-form__logo
+      img(src="./assets/images/logo.svg", alt="logo")
+    h2.its-form__header Изменение пароля
+    .its-form__input.its-form__input_first 
+      .its-form__placeholder-icon
+        input(type="text", name="login" placeholder="Email / Логин")
+        span(class="its-form__error its-form__error_mandatory_field") Обязательное поле
+    .its-form__input
+      .its-form__placeholder-icon
+        input(type="text", name="control-word" placeholder = "Контрольная строка")
+        span.its-form__error.its-form__error_wrong_word(class = wrongWord && "its-form__error_active") Неверное контрольное слово
+    .its-form__input
+      .its-form__placeholder-icon
+        input(type="password", name="newpass-1" placeholder="Новый пароль")
+        .its-form__eye.its-form__eye_closed
+        span(class="its-form__error its-form__error_password_length") Пароль должен быть не менее 6 символов
+    .its-form__input.its-form__input_last
+      .its-form__placeholder-icon
+        input(type="password", name="newpass-2" placeholder="Подтверждение пароля")
+        span(class="its-form__error its-form__error_not_match") Пароли не совпадают
+    .its-form__label Обязательные поля
+    button(type="submit" class="its-form__submit") 
+      span Изменить пароль
+      img(src="./assets/images/arrow.svg", alt="arrow")
+    .its-form__sign
+      a(class='its-form__sign-up',href=hrefSignUp , target='_blank', rel='noopener noreferrer') Зарегистрироваться
+      a(class='its-form__sign-in',href=hrefSignIn , target='_blank', rel='noopener noreferrer') Войти
